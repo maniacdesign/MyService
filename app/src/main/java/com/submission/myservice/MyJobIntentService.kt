@@ -14,8 +14,8 @@ class MyJobIntentService : JobIntentService () {
         internal const val EXTRA_DURATION = "extra_duration"
         private val TAG = MyJobIntentService::class.java.simpleName
 
-        fun enqueWork(context: Context, intent: Intent) {
-            enqueWork(context, MyJobIntentService::class.java, JOB_ID, intent)
+        fun enqueueWork(context: Context, intent: Intent) {
+            enqueueWork(context, MyJobIntentService::class.java, JOB_ID, intent)
         }
     }
 
